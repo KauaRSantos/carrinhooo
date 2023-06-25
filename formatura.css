@@ -1,0 +1,576 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Bellota+Text&display=swap');
+
+  
+ 
+  @import url('https://fonts.googleapis.com/css2?family=Red+Rose&display=swap');
+
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+
+ /* --------------------------------MENU LATERAL------------------------------ */
+
+ body{
+    background-color: black;
+    color: white;
+ }
+
+nav.menu-lateral{
+    width: 80px;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    padding: 40px 0 40px 1%;
+    box-shadow: 3px 0 0 #Ff0077;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow-y: scroll;
+    padding-left: 5px;
+   
+    
+}
+
+nav.menu-lateral.expandir{
+    width: 300px;
+}
+
+.btn-expandir{
+    width: 100%;
+    
+    
+}
+
+.btn-expandir > i{
+    color:  #Ff0077;
+    font-size: 50px;
+    padding-left: 5px;
+    cursor: pointer;
+
+
+}
+
+ul{
+    height: 100%;
+    list-style-type: none;
+}
+
+ul li.item-menu{
+    transition: 1s;
+}
+
+ul li.ativo{
+    background-color: #392b3888;
+}
+
+ul li.item-menu:hover{
+    background-color: #ff007796 ;
+    
+}
+
+ul li.item-menu a:hover{
+    transition: 1s;
+}
+
+ul li.item-menu a{
+    color: #Ff0077;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 4%;
+    display: flex;
+    margin-bottom: 20px;
+    line-height: 40px;
+}
+
+ul li.item-menu a .text-link{
+    margin-left: 40px;
+}
+
+ul li.item-menu a .im{
+    width: 40px;
+}
+
+::-webkit-scrollbar{
+    background-color: #000000;
+    width: 5px;
+
+    
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #Ff0077;
+    
+}
+
+ /* ---------------------------------------cabeçalho---------------------------------------------- */
+ .container{
+   
+    margin-top: 10px;
+    display: flex;
+    width: 100%;
+    /* background-color: red; */
+    justify-content: space-between;
+}
+
+.esquerda{
+   
+    /* z-index: 10; */
+    /* z-index: 100; */
+    margin: 10px;
+    /* background-color: aqua; */
+}
+
+.direita{
+    
+    align-items: center;
+    justify-content:space-evenly;
+    display: flex;
+    flex-direction: row;
+    /* background-color: blueviolet; */
+    width: 25%;
+    
+
+}
+
+.entrar{
+    
+    font-size: 30px;
+    background-color:#FF0077;
+    color: rgb(255, 255, 255);
+    border-radius: 80px ;
+    padding: 10px 30px 10px 30px;
+    font-family: 'Bellota Text', cursive;
+}
+.level{
+    margin: 10px;
+    display: flex;
+    margin-left: 90px;
+    width: 4%;
+    position: fixed;
+    
+}
+.levela{
+
+    margin: 10px;
+    display: flex;
+    margin-left: 90px;
+    width: 13%;
+   
+    
+}
+
+/* ----------------------------------------capa----------------------------------------  */
+
+#form{
+    background-image: url(ims/form.png);
+    background-position: center center;
+    background-size: cover;
+    margin-left: 80px;
+    margin-top: 10px;
+    width: 95%;
+    height: 10cm;
+    
+}
+
+
+
+
+/* ________________________Alinhar as Divs de descrição e mapa______________________________ */
+
+.geral{
+    display: flex;
+    margin: 120px;
+    padding: 20px;
+    width: 90%;
+}
+
+.left{
+    width: 50%;
+    height: 200px;
+    display: inline-block;
+}
+
+.right{
+   width: 50%;
+position: absolute;
+left: 55%;
+bottom: -84%;
+}
+
+.descricao{
+    font-size: 20px;
+    text-align:left;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+.descricao1{
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+.ios{
+    color: #Ff0077;
+    font-family: 'Raleway', sans-serif;
+}
+
+.top{
+    margin-left: 200px;
+}
+
+/*----------------- carrossel----------------- */
+
+
+.conteiner{
+
+    height: 600px;
+    width: 160vh;
+    overflow: hidden;
+    position: absolute;
+    top: 270%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+  
+  }
+  
+  .navegacao{
+      position: absolute;
+      bottom: 20px;
+      left:40%;
+      transform: translate(-50%);
+      display: flex;
+  
+  }
+  
+  .bar{
+    width: 30px;
+    height: 5px;
+    margin: 6px;
+    background: #Ff0077;
+    transition: 0.3s;
+  }
+  
+  .bar:hover {
+    background: rgb(0, 0, 0);
+  
+  }
+  input {
+    display: none;
+  }
+  .imagens {
+
+    display: flex;
+    height: 100%;
+    width: 600%;
+    
+  }
+  
+  .imagem {
+   width: 16.6666666667%;
+   transition: 0.5s;
+  }
+  .imagem .carrocel{
+    width: 80%;
+    
+  }
+  
+  #imagem1:checked ~.img1 {
+    margin-left: 0 ;
+    
+  }
+  
+  #imagem2:checked ~.img1 {
+    margin-left: -16.6666666667%;
+  
+  }
+  
+  #imagem3:checked ~.img1{
+    margin-left: -33.3333333334%;
+  }
+  
+  #imagem4:checked ~.img1 {
+     margin-left: -50.0000000001%;
+  }
+  
+  #imagem5:checked ~.img1 {
+    margin-left: -66.6666666668%;
+  }
+  
+  #imagem6:checked ~.img1 {
+    margin-left: -83.3333333335 ;
+  }
+
+  /* ------------------ CARREGAMENTO UP ------------------*/
+
+
+* {
+    
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  div.pre-carregamento {
+    width: 100%;
+    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    transition: 1.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+  }
+  
+  div.fish {
+    width: 10px;
+}
+  
+  
+ 
+
+/*----------------------------- FOOTEER---------------------------------- */
+
+
+
+footer {
+    
+    bottom: 0vh;
+    margin-top: 110vh;
+    width: 100%;
+    /* background-image: linear-gradient(to right, #e8175d, #cc527a); */
+}
+
+footer li{
+    list-style: none;
+    text-align: center;
+    padding: 5px;
+    font-size: 1.2rem;
+}
+
+footer h2{
+    font-size: 2rem;
+}
+
+footer .links,.copy {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    align-self: center;
+    font-family: 'Red Rose', cursive;
+}
+
+footer a,footer ol {
+    color: white;
+    text-decoration: none;
+}
+
+#redes {
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 20%;
+}
+
+#redes:hover{
+    background-color: #080808;
+    transition: 0.5s;
+}
+
+.copy {
+    background-image: linear-gradient(to left, #260016, #FF0077);
+    width: 100%;
+    border-top-left-radius: 50%;
+}
+
+.logo {
+    font-family: 'Simply Rounded', sans-serif;
+    color: white;
+    font-size: 4rem;
+    text-transform: capitalize;
+    transition: all 2s;
+}
+
+.copy p {
+    font-weight: 500;
+}
+
+#up {
+    color: #FF0077;
+}
+
+/* -------------Menu responsivo---------------- */
+.menuzinho{
+    width: 100%;
+    display: none;
+ }
+
+
+ /*-------------------------------------BOTAO DE TOOPO----------------------------- */
+
+ .go-top-btn {
+    position: fixed;
+    bottom: 35px;
+    right: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 60px;
+    width: 60px;
+    background: #000000;
+    border: 2px solid #FF0077;
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .go-top-btn img {
+    width: 40px;
+    height: 40px;
+  }
+
+
+
+
+@media (max-width: 768px) {
+
+    body{
+        /* background-color: gray; */
+        display: grid;
+        margin: 0;
+        padding: 0;
+      
+      
+    }
+
+     .level{          /*Logo up  */
+        margin: 0;
+        width: 20%;
+        padding: 0;
+     }
+
+     .container{
+        width: 70%;
+        
+    }
+    .geral{
+        display: flex;
+        margin: 0;
+        flex-direction: column-reverse;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+    }
+    
+
+    .container{
+        width: 80%;
+    }
+    
+    .levela{
+        margin-top: 30px;
+        width: 50%;
+        margin-right: 20px;
+    }
+
+    .entrar{
+        margin-top: 20px;
+        
+    }
+
+    .direita{
+        margin-right: 40px;
+    }
+
+
+    
+    .conteudo{
+        margin: 0;
+
+      }
+
+
+    .sha{
+        margin: 0;
+        
+    }
+
+    #capa{
+        height: 200px;
+        margin: 0;
+    }
+
+    .papa{
+        margin-bottom: 100px;
+    }
+
+    .menu-lateral, footer{
+        display: none;
+    }
+
+
+    .menuzinho{
+
+        padding: 0;
+        bottom: 0vh;
+        position: fixed;
+        width: 100%;
+        height: 70px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        background-color: #000;
+       
+    }
+    
+
+    .levela{
+        width: 50%;
+    }
+
+    .descricao{
+        margin: 0;
+        padding: 0;
+        font-size: 20px;
+        text-align: justify;
+        
+    }
+
+    .descricao1{
+        width: 100%;
+        font-size: 20px;
+        
+    }
+
+    #form{
+        width: 100%;
+        height: 200px;
+        margin: 0;
+        
+    }
+
+    .imagem,.carrocel, .ulala, .navegacao, .menu-lateral, .footer {
+        display: none;
+    }
+
+    .emagem{
+        margin: 0;
+        width: 50px;
+        margin-left: 16px;
+    }
+
+    
+}
+
+
+
+
+
+ 

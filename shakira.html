@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="musc.css">
+    <link rel="icon" href="ims/upsemfundo.png">
+    <link rel="stylesheet" href="formatura.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        #capa {
+            z-index: -1;
+            background-position: center;
+            background-size: cover;
+            margin-top: 10px;
+            width: 100%;
+            height: 15cm;
+            position: relative;
+        }
+
+        .conteudo {
+            margin-left: 80px;
+            width: 95.5%;
+            position: relative;
+            background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 9.74%, #000 100%);
+        }
+
+        .sha {
+            margin-left: 100px;
+        }
+
+        .descricao,
+        .descricao1 {
+            text-align: left;
+        }
+
+        footer {
+            margin-top: 30vh;
+        }
+    </style>
+
+
+    <title> Shakira</title>
+</head>
+
+<body>
+
+    <!----------------------------------------CARREGAMENTO--------------------------------------------->
+
+    <body onload="preCarregamento();">
+
+        <div class="pre-carregamento">
+            <div class="efeito-carregamento"> <img src="ims/upsemfundo.png" alt="" width="170px"></div>
+        </div>
+
+
+        <!------------------------- BOTÃO EXPANDIR--------------------------->
+
+        <nav class="menu-lateral">
+
+            <div class="btn-expandir"><i class="bi bi-list" id="btn-exp"></i>
+                <!--<img src="ims/logosemfundo.png" alt="" width="70px">-->
+            </div>
+            <!---------------------------------MENU LATERAL  -------------------------->
+            <ul>
+                <li class="item-menu ativo">
+                    <a href="index.html">
+                        <span class="icon"><img class="im" src="ims/1.png" alt=""></span>
+                        <span class="text-link">HOME</span>
+                    </a>
+                </li>
+
+                <li class="item-menu">
+                    <a href="#">
+                        <span class="icon"><img class="im" src="ims/2.png" alt=""></span>
+                        <span class="text-link">ESPORTES</span>
+                    </a>
+                </li>
+
+                <li class="item-menu">
+                    <a href="musc.html">
+                        <span class="icon"><img class="im" src="ims/6.png" alt=""></span>
+                        <span class="text-link">MÚSICA</span>
+                    </a>
+                </li>
+
+                <li class="item-menu">
+                    <a href="#">
+                        <span class="icon"><img class="im" src="ims/5.png" alt=""></span>
+                        <span class="text-link">GAMES</span>
+                    </a>
+                </li>
+
+                <li class="item-menu">
+                    <a href="#">
+                        <span class="icon"><img class="im" src="ims/4.png" alt=""></span>
+                        <span class="text-link">CINEMA</span>
+                    </a>
+                </li>
+
+                <li class="item-menu">
+                    <a href="#">
+                        <span class="icon"><img class="im" src="ims/3.png" alt=""></span>
+                        <span class="text-link">TEATRO</span>
+                    </a>
+                </li>
+
+                <li class="item-menu">
+                    <a href="#">
+                        <span class="icon"><img class="im" src="ims/10.png" alt=""></span>
+                        <span class="text-link">CARRINHO</span>
+                    </a>
+                </li>
+
+                <li class="item-menu">
+                    <a href="#">
+                        <span class="icon"><img class="im" src="ims/8.png" alt=""></span>
+                        <span class="text-link">SOBRE</span>
+                    </a>
+                </li>
+
+                <li class="item-menu">
+                    <a href="#">
+                        <span class="icon"><img class="im" src="ims/9.png" alt=""></span>
+                        <span class="text-link">LOGIN</span>
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+
+        <!--------------------------- CABEÇALHO-------------------------------->
+        <div class="container">
+
+            <div class="esquerda">
+                <img src="ims/upsemfundo.png" alt="" class="level">
+            </div>
+
+            <div class="direita">
+                <img src="ims/7.png" alt="" class="levela shoppingCartButton">
+                <p class="entrar"> Entrar </p>
+
+                <div class="producstOnCart hide">
+                    <div class="overlay"></div>
+                    <div class="top" id="top-cart">
+                        <button id="closeButton">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                        <h3>Carrinho de Compras</h3>
+                    </div>
+                    <ul id="buyItems">
+                        <h4 class="empty">O seu carrinho está vazio</h4>
+                        <!-- <li class="buyItem">
+						<img src="Images/producs-images/Mobiles/galaxynote10.png">
+						<div>
+							<h5>Products Name</h5>
+							<h6>$199</h6>
+							<div>
+								<button>-</button>
+								<span class="countOfProduct">1</span>
+								<button>+</button>
+							</div>
+						</div>
+					</li> -->
+                    </ul>
+                    <button class="btn checkout hidden">Comprar</button>
+                </div> 
+
+            </div>
+
+        </div>
+
+        <!---------------------------------- CAPA ------------------------------->
+
+        <div class="conteudo">
+            <img src="ims/shaki.jpg" alt="" id="capa">
+            <div class="legenda">
+                <h1> </h1>
+            </div>
+        </div>
+
+
+        <!-------------------------------------------DESCRIÇÃO------------------------------------------>
+        <div class="geral">
+
+            <div class="left">
+                <p class="descricao">
+
+
+                    É com imensa alegria que anunciamos a presença da incrível e talentosa <span class="ios">Shakira
+                    </span> em um show inesquecível. Você está cordialmente convidado(a) para fazer parte dessa
+                    experiência única e emocionante.
+
+                    Prepare-se para uma noite repleta de música envolvente, coreografias impressionantes e uma energia
+                    contagiante. Shakira, uma das maiores artistas pop da atualidade, é conhecida por sua voz poderosa,
+                    sua presença de palco arrebatadora e seu talento inigualável para a dança.
+
+                    Não perca a oportunidade de testemunhar ao vivo a energia contagiante de hits como "Hips Don't Lie",
+                    "Whenever, Wherever", "Waka Waka (This Time for Africa)" e muitos outros sucessos que conquistaram o
+                    mundo inteiro. Shakira certamente proporcionará uma noite de entretenimento espetacular que ficará
+                    gravada na sua memória.
+
+                    Os ingressos para o show estão sendo vendidos rapidamente, portanto, é importante garantir o seu
+                    lugar o mais rápido possível. Não perca a oportunidade de vivenciar um evento incrível ao lado de
+                    fãs apaixonados e desfrutar de uma performance magnética da lendária Shakira.
+
+                    Contamos com a sua presença para tornar essa noite verdadeiramente especial. Garanta seu ingresso
+                    agora mesmo e prepare-se para uma experiência musical inigualável!</p>
+                    <br>
+
+                <p class="descricao1"> Local : Av. Padre Leopoldo Brentano, 110 - Portão 2 | - Humaitá</p>
+                <p class="descricao1"> Data: 07/07/2023</p>
+                <p class="descricao1"> Horario: 14:30 às 17:30</p>
+            </div>
+
+            <div class="right ">
+                <img src="ims/arena.jpeg" alt="" width="80%" class="sha">
+            </div>
+
+        </div>
+
+
+        <!--------------------------------------- FOOTER-------------------------------------->
+
+
+        <footer>
+            <div class="links">
+
+                <ol class="listol">
+                    <h2> INSTITUCIONAL </h2>
+                    <li><a href="#">Termos e condições</a></li>
+                    <li><a href="#">Sobre o site</a></li>
+                    <li><a href="#">Mapa do site</a></li>
+                    <li><a href="#">Sobre</a></li>
+                </ol>
+
+                <ol class="listol">
+                    <h2>FORMAS DE PAGAMENTOS</h2>
+                    <li><a href="#"><img src="ims/pix.png" alt="" width="45px" style="border-radius:12px;"></a></li>
+
+
+                </ol>
+                <div class="redes">
+                    <a href="#"><img src="ims/insta2.png" id="redes" alt=""></a>
+                    <a href="#"><img src="ims/email.png" id="redes" alt=""></a>
+
+                </div>
+            </div>
+            <div class="copy">
+                <h1 class="logo"> level up</h1>
+                <p> Todos os direitos reservados para a página level up 2023&reg;&copy;</p>
+            </div>
+        </footer>
+
+        <!---------------------------------------BOTAO DE TOOPO----------------------------- -->
+        <button class="go-top-btn">
+            <img src="ims/upsemfundo.png" alt="arrow up">
+        </button>
+
+        <!---------------menu responsivo------------- -->
+        <div class="menuzinho">
+            <div class="esporte"> <a href="#"> <img src="ims/2.png" alt="" class="emagem"></a> </div>
+            <div class="teatro"><a href="#"> <img src="ims/5.png" alt="" class="emagem"></a> </div>
+            <div class="nsei"><a href="index.html"> <img src="ims/1.png" alt="" class="emagem"></a> </div>
+            <div class="cinema"> <a href="#"> <img src="ims/6.png" alt="" class="emagem"></a></div>
+            <div class="musica"><a href="musc.html"> <img src="ims/3.png" alt="" class="emagem"></a> </div>
+        </div>
+
+
+
+        <script src="menu.js"></script>
+        <script src="cart.js"></script>
+    </body>
+
+</html>

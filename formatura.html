@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formatura.css">
+    <link rel="stylesheet" href="musc.css">
+    <link rel="icon" href="ims/upsemfundo.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title> Level Up Events</title>
+</head>
+
+<body>
+
+    <!----------------------------------------CARREGAMENTO--------------------------------------------->
+
+    <body onload="preCarregamento();">
+
+        <div class="pre-carregamento">
+            <div class="efeito-carregamento"> <img src="ims/upsemfundo.png" alt="" width="170px"></div>
+        </div>
+
+
+        <!------------------------- BOTÃO EXPANDIR--------------------------->
+
+        <nav class="menu-lateral">
+
+            <div class="btn-expandir"><i class="bi bi-list" id="btn-exp"></i>
+                <!--<img src="ims/logosemfundo.png" alt="" width="70px">-->
+            </div>
+            <!---------------------------------MENU LATERAL  -------------------------->
+            <ul>
+                <li class="item-menu ativo">
+                    <a href="index.html">
+                        <span class="icon"><img class="im" src="ims/1.png" alt=""></span>
+                        <span class="text-link">HOME</span>
+                    </a>
+                </li>
+
+                <li class="item-menu">
+                    <a href="#">
+                        <span class="icon"><img class="im" src="ims/2.png" alt=""></span>
+                        <span class="text-link">ESPORTES</span>
+                    </a>
+                </li>
+
+                <li class="item-menu">
+                    <a href="musc.html">
+                        <span class="icon"><img class="im" src="ims/6.png" alt=""></span>
+                        <span class="text-link">MÚSICA</span>
+                    </a>
+                </li>
+
+                <li class="item-menu">
+                    <a href="#">
+                        <span class="icon"><img class="im" src="ims/5.png" alt=""></span>
+                        <span class="text-link">GAMES</span>
+                    </a>
+                </li>
+
+                <li class="item-menu">
+                    <a href="#">
+                        <span class="icon"><img class="im" src="ims/4.png" alt=""></span>
+                        <span class="text-link">CINEMA</span>
+                    </a>
+                </li>
+
+                <li class="item-menu">
+                    <a href="#">
+                        <span class="icon"><img class="im" src="ims/3.png" alt=""></span>
+                        <span class="text-link">TEATRO</span>
+                    </a>
+                </li>
+
+                <li class="item-menu">
+                    <a href="#">
+                        <span class="icon"><img class="im" src="ims/10.png" alt=""></span>
+                        <span class="text-link">CARRINHO</span>
+                    </a>
+                </li>
+
+                <li class="item-menu">
+                    <a href="#">
+                        <span class="icon"><img class="im" src="ims/8.png" alt=""></span>
+                        <span class="text-link">SOBRE</span>
+                    </a>
+                </li>
+
+                <li class="item-menu">
+                    <a href="#">
+                        <span class="icon"><img class="im" src="ims/9.png" alt=""></span>
+                        <span class="text-link">LOGIN</span>
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+
+        <!--------------------------- CABEÇALHO-------------------------------->
+
+        <div class="container">
+
+            <div class="esquerda">
+                <img src="ims/upsemfundo.png" alt="" class="level">
+            </div>
+
+            <div class="direita">
+                <img src="ims/7.png" alt="" class="levela shoppingCartButton">
+                <p class="entrar"> Entrar </p>
+
+                <div class="producstOnCart hide">
+                    <div class="overlay"></div>
+                    <div class="top" id="top-cart">
+                        <button id="closeButton">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                        <h3>Carrinho de Compras</h3>
+                    </div>
+                    <ul id="buyItems">
+                        <h4 class="empty">O seu carrinho está vazio</h4>
+                        <!-- <li class="buyItem">
+						<img src="Images/producs-images/Mobiles/galaxynote10.png">
+						<div>
+							<h5>Products Name</h5>
+							<h6>$199</h6>
+							<div>
+								<button>-</button>
+								<span class="countOfProduct">1</span>
+								<button>+</button>
+							</div>
+						</div>
+					</li> -->
+                    </ul>
+                    <button class="btn checkout hidden">Comprar</button>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!---------------------------------- CAPA ------------------------------->
+
+        <div class="caps">
+            <img src="ims/form.png" alt="" id="form">
+        </div>
+
+
+        <!-------------------------------------------DESCRIÇÃO------------------------------------------>
+        <div class="geral">
+
+            <div class="left">
+
+                <p class="descricao"> Prezados amigos, familiares e colegas de classe,
+
+                    É com grande alegria e satisfação que convidamos vocês para a formatura da turma de Desenvolvimento
+                    Web Full Stack! Após meses de dedicação, estudo intenso e trabalho em equipe, estamos prontos para
+                    celebrar essa conquista significativa em nossas vidas.
+
+
+
+                    Durante nossa jornada, mergulhamos em um mundo de linguagens de programação, frameworks e
+                    tecnologias que nos capacitaram a criar soluções inovadoras e dinâmicas para o mundo virtual. Agora,
+                    chegou o momento de compartilhar esse momento especial com todos aqueles que foram fundamentais para
+                    o nosso sucesso.
+
+                    A cerimônia de formatura será uma oportunidade para celebrarmos juntos os desafios superados, as
+                    habilidades adquiridas e o crescimento pessoal e profissional alcançado ao longo dessa jornada. Será
+                    um momento de reconhecimento mútuo, gratidão e motivação para enfrentarmos os desafios futuros.
+
+                    Gostaríamos de expressar nossa profunda gratidão a nossos professores, mentores e amigos que nos
+                    apoiaram incondicionalmente durante essa trajetória. Sem a orientação deles, nossa jornada teria
+                    sido muito mais difícil. Também agradecemos às nossas famílias e entes queridos pelo amor, paciência
+                    e apoio constantes.
+
+
+                    Estamos ansiosos para celebrar essa conquista em grande estilo com todos vocês. Esperamos vê-los lá!
+
+                    Atenciosamente, <span class="ios "> Instituto da Oportunidade Social.</span>
+
+                </p>
+
+
+                <div class="product">
+                    <div class="product-under">
+                        <figure class="product-image">
+                            <img src="ims/1.png" alt="popular labtops and computers" />
+                            <div class="product-over">
+                             
+<h4 class="productName">formatura</h4>
+                            </div>
+                        </figure>
+                       
+                       
+                        <div class="product-summary"> 
+                              <button class="btn btn-small addToCart" data-product-id="1">
+                                   Adicionar Ao Carrinho
+                                </button>
+                        
+
+                            <h6 class="price">
+                               $ <span class="priceValue">5,00</span>
+                            </h6>
+                            <div class="box">
+                                <select id="select">
+                                    <option selected disabled>Escolha um ....</option>
+                                    <option value="pizza">Pizza</option>
+                                    <option value="tomate">Tomate</option>
+                                    <option value="cereja">Cereja</option>
+                                    <option value="azeite">Azeite</option>
+                                </select>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    
+
+
+                    <div class="right ">
+                        <p class="descricao1"> Local : Av. Manoel Elias, 2001. Auditório Arena 1111</p>
+                        <p class="descricao1"> Data: 07/07/2023</p>
+                        <p class="descricao1"> Horario: 14:30 às 17:30</p>
+
+                        <br><br><br>
+                        <img src="ims/ioss.png" alt="" width="600px" class="ulala">
+                    </div>
+
+
+                </div>
+
+                <!---------------------------------------BOTAO DE TOOPO----------------------------- -->
+                <button class="go-top-btn">
+                    <img src="ims/upsemfundo.png" alt="arrow up">
+                </button>
+
+
+                <!------------------------------ carrossel ------------------->
+                <div class="conteiner">
+
+                    <div class="imagens">
+                        <input type="radio" name="radio" id="imagem1" checked>
+                        <input type="radio" name="radio" id="imagem2">
+                        <input type="radio" name="radio" id="imagem3">
+                        <input type="radio" name="radio" id="imagem4">
+                        <input type="radio" name="radio" id="imagem5">
+                        <input type="radio" name="radio" id="imagem6">
+
+                        <div class="imagem img1">
+                            <img src="ims/giff.gif" alt="Girassol" class="carrocel">
+                        </div>
+
+                        <div class="imagem img2">
+                            <img src="ims/tree.jpg" alt="Girassol" class="carrocel">
+                        </div>
+
+                        <div class="imagem img3">
+                            <img src="ims/one.jpg" alt="Girassol" class="carrocel">
+                        </div>
+
+                        <div class="imagem img4">
+                            <img src="ims/two.jpg" alt="Girassol" class="carrocel">
+                        </div>
+
+                        <div class="imagem img5">
+                            <img src="ims/tree.jpg" alt="Girassol" class="carrocel">
+                        </div>
+
+                        <div class="imagem img6">
+                            <img src="ims/five.jpg" alt="Girassol" class="carrocel">
+                        </div>
+
+                    </div>
+                    <div class="navegacao">
+                        <label for="imagem1" class="bar"></label>
+                        <label for="imagem2" class="bar"></label>
+                        <label for="imagem3" class="bar"></label>
+                        <label for="imagem4" class="bar"></label>
+                        <label for="imagem5" class="bar"></label>
+                        <label for="imagem6" class="bar"></label>
+                    </div>
+
+
+                </div>
+
+
+                <!------------------------------------------ FOOTER ------------------------------------------>
+
+
+                <footer>
+                    <div class="links">
+
+                        <ol class="listol">
+                            <h2> INSTITUCIONAL </h2>
+                            <li><a href="#">Termos e condições</a></li>
+                            <li><a href="#">Sobre o site</a></li>
+                            <li><a href="#">Mapa do site</a></li>
+                            <li><a href="#">Sobre</a></li>
+                        </ol>
+
+                        <ol class="listol">
+                            <h2>FORMAS DE PAGAMENTOS</h2>
+                            <li><a href="#"><img src="ims/pix.png" alt="" width="45px" style="border-radius:12px;"></a>
+                            </li>
+
+
+                        </ol>
+                        <div class="redes">
+                            <a href="#"><img src="ims/insta2.png" id="redes" alt=""></a>
+                            <a href="#"><img src="ims/email.png" id="redes" alt=""></a>
+
+                        </div>
+                    </div>
+                    <div class="copy">
+                        <h1 class="logo"> level up</h1>
+                        <p> Todos os direitos reservados para a página level up 2023&reg;&copy;</p>
+                    </div>
+                </footer>
+
+                <!---------------menu responsivo------------- -->
+                <div class="menuzinho">
+                    <div class="esporte"> <a href="#"> <img src="ims/2.png" alt="" class="emagem"></a> </div>
+                    <div class="teatro"><a href="#"> <img src="ims/5.png" alt="" class="emagem"></a> </div>
+                    <div class="nsei"><a href="index.html"> <img src="ims/1.png" alt="" class="emagem"></a> </div>
+                    <div class="cinema"> <a href="#"> <img src="ims/6.png" alt="" class="emagem"></a></div>
+                    <div class="musica"><a href="musc.html"> <img src="ims/3.png" alt="" class="emagem"></a> </div>
+                </div>
+
+
+                <script src="menu.js"></script>
+                <script src="formatura.js"></script>
+    </body>
+
+</html>

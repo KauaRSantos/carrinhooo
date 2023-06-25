@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="musc.css">
+    <link rel="icon" href="ims/upsemfundo.png">
+    <link rel="stylesheet" href="formatura.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+
+
+    </style>
+    <title>Vintage</title>
+</head>
+
+<body>
+
+    <!----------------------------------------CARREGAMENTO--------------------------------------------->
+
+    <body onload="preCarregamento();">
+
+        <div class="pre-carregamento">
+            <div class="efeito-carregamento"> <img src="ims/upsemfundo.png" alt="" width="170px"></div>
+        </div>
+
+
+        <!------------------------- BOTÃO EXPANDIR--------------------------->
+
+        <nav class="menu-lateral">
+
+            <div class="btn-expandir"><i class="bi bi-list" id="btn-exp"></i>
+                <!--<img src="ims/logosemfundo.png" alt="" width="70px">-->
+            </div>
+            <!---------------------------------MENU LATERAL  -------------------------->
+            <ul>
+                <li class="item-menu ativo">
+                    <a href="index.html">
+                        <span class="icon"><img class="im" src="ims/1.png" alt=""></span>
+                        <span class="text-link">HOME</span>
+                    </a>
+                </li>
+
+                <li class="item-menu">
+                    <a href="#">
+                        <span class="icon"><img class="im" src="ims/2.png" alt=""></span>
+                        <span class="text-link">ESPORTES</span>
+                    </a>
+                </li>
+
+                <li class="item-menu">
+                    <a href="musc.html">
+                        <span class="icon"><img class="im" src="ims/6.png" alt=""></span>
+                        <span class="text-link">MÚSICA</span>
+                    </a>
+                </li>
+
+                <li class="item-menu">
+                    <a href="#">
+                        <span class="icon"><img class="im" src="ims/5.png" alt=""></span>
+                        <span class="text-link">GAMES</span>
+                    </a>
+                </li>
+
+                <li class="item-menu">
+                    <a href="#">
+                        <span class="icon"><img class="im" src="ims/4.png" alt=""></span>
+                        <span class="text-link">CINEMA</span>
+                    </a>
+                </li>
+
+                <li class="item-menu">
+                    <a href="#">
+                        <span class="icon"><img class="im" src="ims/3.png" alt=""></span>
+                        <span class="text-link">TEATRO</span>
+                    </a>
+                </li>
+
+                <li class="item-menu">
+                    <a href="#">
+                        <span class="icon"><img class="im" src="ims/10.png" alt=""></span>
+                        <span class="text-link">CARRINHO</span>
+                    </a>
+                </li>
+
+                <li class="item-menu">
+                    <a href="#">
+                        <span class="icon"><img class="im" src="ims/8.png" alt=""></span>
+                        <span class="text-link">SOBRE</span>
+                    </a>
+                </li>
+
+                <li class="item-menu">
+                    <a href="#">
+                        <span class="icon"><img class="im" src="ims/9.png" alt=""></span>
+                        <span class="text-link">LOGIN</span>
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+
+        <!--------------------------- CABEÇALHO-------------------------------->
+        <div class="container">
+
+            <div class="esquerda">
+                <img src="ims/upsemfundo.png" alt="" class="level">
+            </div>
+
+            <div class="direita">
+                <img src="ims/7.png" alt="" class="levela shoppingCartButton">
+                <p class="entrar"> Entrar </p>
+
+                <div class="producstOnCart hide">
+                    <div class="overlay"></div>
+                    <div class="top" id="top-cart">
+                        <button id="closeButton">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                        <h3>Carrinho de Compras</h3>
+                    </div>
+                    <ul id="buyItems">
+                        <h4 class="empty">O seu carrinho está vazio</h4>
+                        <!-- <li class="buyItem">
+						<img src="Images/producs-images/Mobiles/galaxynote10.png">
+						<div>
+							<h5>Products Name</h5>
+							<h6>$199</h6>
+							<div>
+								<button>-</button>
+								<span class="countOfProduct">1</span>
+								<button>+</button>
+							</div>
+						</div>
+					</li> -->
+                    </ul>
+                    <button class="btn checkout hidden">Comprar</button>
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <!---------------------------------- CAPA ------------------------------->
+
+        <div class="conteudo">
+            <img src="ims/vint.jpg" alt="" id="capa">
+            <div class="legenda">
+                <h1> </h1>
+            </div>
+        </div>
+
+
+        <!-------------------------------------------DESCRIÇÃO------------------------------------------>
+        <div class="geral">
+
+            <div class="left">
+
+                <p class="descricao">
+                    É com imenso prazer que lhe convidamos para uma noite eletrizante e repleta de boa música! Temos a
+                    honra de anunciar que o renomado DJ e produtor <span class="ios">Vintage Culture</span> estará se apresentando ao vivo em um
+                    show imperdível. Você está cordialmente convidado(a) para fazer parte dessa experiência inigualável
+                    em Porto Alegre.
+
+
+                    Prepare-se para mergulhar em um universo de batidas envolventes, melodias cativantes e uma atmosfera
+                    contagiante. Vintage Culture é conhecido por sua capacidade única de criar sets eletrônicos que
+                    conquistam o público e levam a energia da pista de dança a um novo patamar.
+
+                    Não perca a oportunidade de dançar e se divertir ao som de hits como "In the Dark", "It Is What It
+                    Is", "Party on My Own" e muitos outros sucessos que têm dominado as paradas musicais. Com sua
+                    habilidade em misturar estilos e criar uma conexão única com o público, Vintage Culture certamente
+                    proporcionará uma experiência musical incrível.
+
+                    Os ingressos para esse show estão sendo vendidos rapidamente, por isso é essencial garantir o seu
+                    lugar o mais rápido possível. Reúna seus amigos, embarque nessa jornada sonora e prepare-se para uma
+                    noite repleta de diversão e vibrações positivas.
+
+                    Contamos com a sua presença para tornar essa noite verdadeiramente inesquecível. Garanta seu
+                    ingresso agora mesmo e prepare-se para uma experiência única com Vintage Culture em Porto Alegre!
+                </p>
+
+                <p class="descricao1"> Local : Porto ALegre</p>
+                <p class="descricao1"> Data: 30/09/2023</p>
+                <p class="descricao1"> Horario: à partir das 17:00</p>
+            </div>
+
+            <div class="right ">
+                <img src="?" alt="">
+            </div>
+
+        </div>
+
+        <!------------------------------------------ FOOTER ------------------------------------------>
+
+
+        <footer>
+            <div class="links">
+
+                <ol class="listol">
+                    <h2> INSTITUCIONAL </h2>
+                    <li><a href="#">Termos e condições</a></li>
+                    <li><a href="#">Sobre o site</a></li>
+                    <li><a href="#">Mapa do site</a></li>
+                    <li><a href="#">Sobre</a></li>
+                </ol>
+
+                <ol class="listol">
+                    <h2>FORMAS DE PAGAMENTOS</h2>
+                    <li><a href="#"><img src="ims/pix.png" alt="" width="45px" style="border-radius:12px;"></a></li>
+
+
+                </ol>
+                <div class="redes">
+                    <a href="#"><img src="ims/insta2.png" id="redes" alt=""></a>
+                    <a href="#"><img src="ims/email.png" id="redes" alt=""></a>
+
+                </div>
+            </div>
+            <div class="copy">
+                <h1 class="logo"> level up</h1>
+                <p> Todos os direitos reservados para a página level up 2023&reg;&copy;</p>
+            </div>
+        </footer>
+
+        <!---------------------------------------BOTAO DE TOOPO----------------------------- -->
+        <button class="go-top-btn">
+            <img src="ims/upsemfundo.png" alt="arrow up">
+        </button>
+
+
+        <!---------------menu responsivo------------- -->
+        <div class="menuzinho">
+            <div class="esporte"> <a href="#"> <img src="ims/2.png" alt="" class="emagem"></a> </div>
+            <div class="teatro"><a href="#"> <img src="ims/5.png" alt="" class="emagem"></a> </div>
+            <div class="nsei"><a href="index.html"> <img src="ims/1.png" alt="" class="emagem"></a> </div>
+            <div class="cinema"> <a href="#"> <img src="ims/6.png" alt="" class="emagem"></a></div>
+            <div class="musica"><a href="musc.html"> <img src="ims/3.png" alt="" class="emagem"></a> </div>
+        </div>
+
+
+        <script src="menu.js"></script>
+        <script src="cart.js"></script>
+    </body>
+
+</html>

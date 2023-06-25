@@ -1,0 +1,201 @@
+ 
+    <!--------------------carrossel------------------------------------>
+    <div class="slider">
+
+        <div class="slides">
+
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+            <input type="radio" name="radio-btn" id="radio5">
+            <input type="radio" name="radio-btn" id="radio6">
+
+            <div class="slide first">
+                <img src="https://i.pinimg.com/originals/47/e7/66/47e7664216492cc330a8880f17d2ae04.jpg" alt="">
+            </div>
+
+            <div class="slide">
+                <img src="https://i.pinimg.com/originals/71/51/71/7151717daf6d5fd75801c81a9eb77788.jpg" alt="">
+            </div>
+
+            <div class="slide">
+                <img src="https://acaoparatleta.com.br/wp-content/uploads/2022/09/Camping-Internacional-de-Atletismo-de-Cadeira-de-Rodas-no-CT-Paralimpico-em-Sao-Paulo.-Foto-Ale-CabralCPB..jpg" alt="">
+            </div>
+
+            <div class="slide">
+                <img src="https://images7.alphacoders.com/368/368873.jpg" alt="">
+            </div>
+
+        
+
+            <div class="navigation-auto">
+
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+               
+
+            </div>
+
+        </div>
+
+        <div class="manual-navigation">
+
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+           
+
+        </div>
+
+    </div>
+
+     <!--------------------carrossel------------------------------------>
+     
+
+css
+
+
+/*  carrossel  */
+.slider{
+    margin: 0 auto;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+    margin-left: 300px;
+    margin-top: 140px;
+    border-radius: 15px;
+    border:2px solid #FF0077;
+}
+
+.slides{
+    width: 400%;
+    height:400px;
+    display: flex;
+   
+}
+
+.slides input{
+    display: none;
+    
+}
+
+.slide{
+    width: 25%;
+    position: relative;
+    
+
+}
+
+.slide img{
+    width: 800px;
+}
+
+.manual-navigation{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+.manual-btn{
+    border: 2px solid #ff0077;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+    
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+    
+}
+
+.manual-btn:hover{
+    background-color: #ff0077;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+    
+}
+
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -75%;
+}
+
+.navigation-auto div{
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.navigation-auto{
+    position: absolute;
+    width: 800px;
+    margin-top: 360px;
+    display: flex ;
+    justify-content: center;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: #ff0077;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: #ff0077;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: #ff0077;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background-color: #ff0077;
+}
+
+/*  carrossel  */
+
+
+js
+
+/* carrossel */
+let count = 1;
+document.getElementById("radio1").checked = true;
+   
+setInterval( function(){
+    nextImage();
+}, 2000)
+
+function nextImage(){
+    count++;
+    if(count>4){
+        count =1;
+    }
+
+    document.getElementById("radio"+count).checked = true;
+}
+
+
+
